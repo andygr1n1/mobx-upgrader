@@ -1,50 +1,85 @@
 .App {
-    height: 100vh;
-    text-align: center;
-    background: red;
+  height: 100vh;
+  text-align: center;
+  background: red;
 }
 
 .App-logo {
-    margin: 10px 0;
-    height: 7vmin;
-    pointer-events: none;
+  margin: 10px 0;
+  height: 7vmin;
+  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .App-header {
-    background-color: #282c34;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-link {
-    color: #61dafb;
+  color: #61dafb;
 }
 
 .App-body {
-    display: flex;
-    flex: 1 1 auto;
-    height: 100%;
-    padding: 5%;
-    color: #ffffff;
-    font-size: 20px;
-    background: #282c34;
+  display: flex;
+  flex: 1 1 auto;
+  height: 100%;
+  padding: 5%;
+  color: #ffffff;
+  font-size: 20px;
+  background: #282c34;
 }
 
 @keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Click-counter-container {
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
+}
+
+.Click-counter {
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: aquamarine;
+  color: #333;
+  padding: 5px;
+  border-radius: 5px;
+  height: 30px;
+  cursor: pointer
+}
+
+.Click-counter-reset {
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: skyblue;
+  color: #333;
+  padding: 5px;
+  border-radius: 5px;
+  height: 30px;
+  cursor: pointer
 }

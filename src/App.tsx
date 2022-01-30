@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
-import { ClickCounter } from './components/ClickCounter'
+import { BasicTimer, ClickCounter } from './components/ClickCounter'
 
 function App() {
     return (
@@ -10,7 +10,7 @@ function App() {
                 <img src={logo} className="App-logo" alt="logo" />
             </header>
             <div className="App-body">
-                <ClickCounter />
+                <ClickCounter timer={BasicTimer} />
             </div>
         </div>
     )
